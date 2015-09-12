@@ -1,0 +1,58 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It allows to focus only on changed lines, wich are fewer than the complete file.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Knowing how certain parts of code evolve over time can help us improve the way 
+    we write code, thinking of, and anticipating, possible modifications that will
+    be needed in future.
+    Furtermore, looking at the errors we made in previous versions of code can help 
+    us to avoid making the same errors in new code.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manual commit: pros: it allows to logically group changes made to the code, so
+			 for each version committed the purpose of the change will be
+			 easier to understand
+		   cons: the user have the responsibility to choose when and what to commit
+			 and to remember to do it.
+    Automatic versions: pros: it is safer because every change is saved even if the 
+			      user does not remember to save or commit
+			cons: because versions are saved automatically, changes between
+			      versions are more difficult to understand (there is no logical
+			      separation between versions, like for example "adding a feature").
+			      in case of a program, it makes difficult to restore a previous
+			      "functional" version of the software.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because the purpose of the two systems is different.
+    Git is used for code, and in a program a single logical change can affect multiple files.
+    Such changes must be treated together in order to keep the program functional.
+    Instead Google Docs is made to handle single documents, each of witch is (mostly) unrelated
+    with the others. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log allows to view the commit history, including commit ids and commit messages.
+    If called with the option --stat (git log --stat) it shows for each commit information about
+    the number of lines modified, added and deleted.
+    git diff shows all the differences between two commits (the two commit ids must be passed 
+    as parameters).
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    The ability to quickly restore a previous (and working) version of the program allows
+    to make changes without the fear to introduce a bug or to lose something that was 
+    previously working.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to use it for my side projects.
