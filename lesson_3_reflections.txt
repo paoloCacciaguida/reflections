@@ -1,0 +1,3 @@
+When would you want to use a remote repository rather than keeping all your work local?
+    Almost always, because a remote repository is safer against data loss.
+    Apart from this, a remote repository is a better choice whenever more than one person contribute to it.
